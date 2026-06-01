@@ -182,7 +182,6 @@ body {
     max-width: 100%;
     height: auto;
     box-shadow: 0 25px 40px rgba(0,0,0,0.4);
-    /* border: 3px solid rgba(79, 70, 229, 0.3); */
     background: linear-gradient(125deg, #120b29, #402261);
     filter: drop-shadow(0 5px 20px rgba(79, 70, 229, 0.5));
 }
@@ -206,20 +205,19 @@ body {
     }
 }
 
- /* ===== TEXTURED WHITE BACKGROUND ===== */
         .section-white-textured {
             background: #f8f9fc;
             background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.035'/%3E%3C/svg%3E");
             color: #1a1a2e;
         }
         
-        /* ===== DARK BACKGROUND ===== */
+      
         .section-dark-bg {
             background: linear-gradient(135deg, #0a0c15 0%, #0f1119 100%);
             color: #eef2ff;
         }
         
-        /* ===== WHITE SECTION TITLES ===== */
+ 
         .section-badge-white {
             display: inline-block;
             font-size: 0.75rem;
@@ -665,9 +663,7 @@ body {
                 gap: 10px;
             }
         }
-/* ===================================================
-   PROFESSIONAL OFFCANVAS
-   =================================================== */
+
 
 .offcanvas {
     background: #0d0f16;
@@ -997,15 +993,7 @@ body {
     color: white;
 }
 
-/* ===================================================
-   IMAGE PLACEHOLDERS — SHARED BASE
-   =================================================== */
 
-/* ===================================================
-   RESPONSIVE IMAGE PLACEHOLDERS
-   =================================================== */
-
-/* Universal responsive image rule — applies to every placeholder img */
 .placeholder-img {
     width: 100%;
     height: 100%;
@@ -1026,7 +1014,7 @@ body {
     box-shadow: 0 10px 40px rgba(79, 70, 229, 0.1);
 }
 
-/* Work Experience image placeholder */
+/* Work Experience image*/
 .exp-img-placeholder {
     width: 100%;
     aspect-ratio: 16 / 7;
@@ -1036,7 +1024,7 @@ body {
     border: 2px solid rgba(79, 70, 229, 0.15);
 }
 
-/* Featured Projects image placeholder */
+/* Featured Projects image*/
 .project-img-placeholder {
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -1095,9 +1083,6 @@ body {
     color: transparent;
 }
 
-/* ===================================================
-   ENHANCED HERO / MAIN SECTION
-   =================================================== */
 
 .home-section.hero {
     background: radial-gradient(ellipse at 20% 50%, #0d0f1e 0%, #05070c 60%, #0a0614 100%);
