@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeric Semillano | IT Specialist Portfolio</title>
+
+    <!-- Bootstrap 5 CSS + Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+   <header class="navbar-section sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a href="#Home" class="navbar-brand" data-aos="fade-right" data-aos-duration="800" data-aos-delay="000">JERIC</a>
+
+                <div class="collapse navbar-collapse justify-content-end">
+                    <ul class="navbar-nav">
+                        <li class="nav-item" data-aos="fade-left" data-aos-duration="800" data-aos-delay="00"><a href="#Home" class="nav-link">Home</a></li>
+                        <li class="nav-item" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100"><a href="#About" class="nav-link">About</a></li>
+                        <li class="nav-item" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200"><a href="#Skills" class="nav-link">Toolkit</a></li>
+                        <li class="nav-item" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300"><a href="#Work" class="nav-link">Experience</a></li>
+                        <li class="nav-item" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400"><a href="#Experience" class="nav-link">Projects</a></li>
+                        <li class="nav-item" data-aos="fade-left" data-aos-duration="800" data-aos-delay="500"><a href="#Education" class="nav-link">Education</a></li>
+                        <li class="nav-item" data-aos="fade-left" data-aos-duration="800" data-aos-delay="600"><a href="#Contact" class="nav-link">Contact</a></li>
+                    </ul>      
+                </div>
+
+                <!-- mobile hamburger trigger -->
+                <button data-aos="fade-right" data-aos-duration="800" data-aos-delay="000" class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+   </header>
+
+   <!-- Mobile Offcanvas Navigations -->
+    <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="mobileMenu">
+        
+        <!-- Header -->
+        <div class="offcanvas-header oc-header">
+            <div class="oc-header-brand">
+                <span class="oc-logo" >JERIC</span>
+            </div>
+            <button type="button" class="oc-close-btn" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+
+        <div class="offcanvas-body oc-body">
+
+
+            <!-- Nav Links -->
+            <div class="oc-nav">
+                <p class="oc-nav-label">Navigation</p>
+                <a href="#Home" class="oc-nav-link" data-bs-dismiss="offcanvas">
+                    <span class="oc-nav-text">Home</span>
+                    <i class="bi bi-chevron-right oc-chevron"></i>
+                </a>
+                <a href="#About" class="oc-nav-link" data-bs-dismiss="offcanvas">
+                    <span class="oc-nav-text">About Me</span>
+                    <i class="bi bi-chevron-right oc-chevron"></i>
+                </a>
+                <a href="#Skills" class="oc-nav-link" data-bs-dismiss="offcanvas">
+                    <span class="oc-nav-text">Tech Toolkit</span>
+                    <i class="bi bi-chevron-right oc-chevron"></i>
+                </a>
+                <a href="#Work" class="oc-nav-link" data-bs-dismiss="offcanvas">
+                    <span class="oc-nav-text">Work Experience</span>
+                    <i class="bi bi-chevron-right oc-chevron"></i>
+                </a>
+                <a href="#Experience" class="oc-nav-link" data-bs-dismiss="offcanvas">
+                    <span class="oc-nav-text">Featured Projects</span>
+                    <i class="bi bi-chevron-right oc-chevron"></i>
+                </a>
+                <a href="#Education" class="oc-nav-link" data-bs-dismiss="offcanvas">
+                    <span class="oc-nav-text">Education</span>
+                    <i class="bi bi-chevron-right oc-chevron"></i>
+                </a>
+                <a href="#Contact" class="oc-nav-link" data-bs-dismiss="offcanvas">
+                    <span class="oc-nav-text">Contact</span>
+                    <i class="bi bi-chevron-right oc-chevron"></i>
+                </a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="oc-footer">
+                <p class="oc-nav-label">Connect</p>
+                <div class="oc-socials">
+                    <a href="https://github.com/semillanojeric-cmd" class="oc-social"><i class="bi bi-github"></i></a>
+                    <a href="https://www.facebook.com/semillanojeric020907" class="oc-social"><i class="bi bi-facebook"></i></a>
+
+                </div>
+                <a href="#Contact" class="oc-cta-btn" data-bs-dismiss="offcanvas">
+                    <i class="bi bi-send me-2"></i>Contact Me
+                </a>
+            </div>
+
+        </div>
+    </div>
+    
+    <main class="home-section hero min-vh-100 d-flex align-items-center" id="Home">
+
+        <div class="hero-grid-overlay"></div>
+
+        <div class="container hero-container">
+            <div class="row align-items-center gy-5">
+
+                <!-- ── Text Column ── -->
+                <div class="col-lg-7 order-lg-1 order-2">
+                    <div class="hero-content">
+
+                        <!-- Greeting + name -->
+                        <p class="hero-greeting" data-aos="fade-right" data-aos-duration="800" data-aos-delay="00">Hi there, I'm</p>
+                        <h1 class="hero-name" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">Jeric<br><span class="hero-name-accent" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">Semillano</span></h1>
+
+                        <!-- Role typewriter line -->
+                        <div class="hero-role-line">
+                            <span class="hero-role-prefix" data-aos="fade-right" data-aos-duration="800" data-aos-delay="350">I am an</span>
+                            <span class="hero-role-rotating" id="heroRole" data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">Aspiring IT Specialist & Front-End Developer</span>
+                        </div>
+
+                        <p class="hero-desc" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">
+                            an Information Technology student passionate about building modern,
+                            user-friendly, and responsive web applications. 
+                        </p>
+
+                        <!-- CTA Buttons -->
+                        <div class="hero-cta-group">
+                            <a href="#Work" class="btn btn-primary-custom" data-aos="fade-up" data-aos-duration="800" data-aos-delay="450">
+                                <i class="bi bi-folder2-open me-2" ></i>View My Work
+                            </a>
+                            <a href="#Contact" class="btn btn-outline-accent" data-aos="fade-up" data-aos-duration="800" data-aos-delay="650">
+                                <i class="bi bi-send me-2"></i>Contact Me
+                            </a>
+                        </div>
+
+                        <!-- Social + divider -->
+                        <div class="hero-social-row">
+                            <span class="hero-social-label" data-aos="fade-right" data-aos-duration="800" data-aos-delay="700">Find me on</span>
+                            <div class="hero-socials">
+                                <a href="https://github.com/semillanojeric-cmd" class="hero-social-btn" data-aos="fade-up" data-aos-duration="800" data-aos-delay="750"><i class="bi bi-github"></i></a>
+                                <a href="https://www.facebook.com/semillanojeric020907" class="hero-social-btn" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800"><i class="bi bi-facebook"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── Image Column ── -->
+                <div class="col-lg-5 order-lg-2 order-1 text-center">
+                    <div class="hero-img-wrap">
+                        <!-- Decorative rings -->
+                        <div class="hero-ring hero-ring-1"></div>
+                        <div class="hero-ring hero-ring-2"></div>
+
+                        <!-- Profile image -->
+                        <div class="hero-img-frame rounded-circle">
+                            <img src="img/profile-removebg-preview.png"
+                                alt="Jeric Semillano"
+                                class="hero-profile-img"
+                                data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Scroll cue -->
+        <a href="#About" class="hero-scroll-cue">
+            <i class="bi bi-chevron-down"></i>
+        </a>
+
+    </main>
+
+    <!-- ABOUT -->
+    <section id="About" class="py-5 section-white-textured">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <div class="section-badge-white" data-aos="fade-bot" data-aos-duration="800" data-aos-delay="00">Get to know me</div>
+                    <h2 class="section-title-white" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">About Me</h2>
+                    <div class="section-divider-white" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200"></div>
+                </div>
+            </div>
+
+            <div class="row align-items-center g-5 mb-5">
+                <div class="col-lg-5 text-center">
+                    <div class="about-img-placeholder" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+                        <img src="img/imgabout.jpg" alt="about me" class="placeholder-img">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <p class="about-text-lead text-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Thank you for taking the time to visit my portfolio. My name is Jeric Semillano, an Information Technology student with a passion for web development, software development, and technology-driven solutions. I enjoy creating modern, user-friendly, and efficient digital experiences while continuously expanding my skills in programming and IT.
+
+                        <br><br>This portfolio showcases my projects, achievements, and experiences that reflect my journey as a student and aspiring IT professional. I am always eager to learn, grow, and take on new challenges in the field of technology.
+
+                        <br><br>Thank you for stopping by, and I hope you enjoy exploring my work.</p>
+                    <div class="about-detail-list mt-4">
+                        <div class="about-detail-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span>Panabo City, Davao del Norte</span>
+                        </div>
+                        <div class="about-detail-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                            <i class="bi bi-envelope-fill"></i>
+                            <span>semillano.jeric@dnsc.edu.ph</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="Skills" class="py-5 section-dark-bg">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <div class="section-badge-dark" data-aos="fade-bottom" data-aos-duration="800" data-aos-delay="100">Expertise</div>
+                <h2 class="section-title-dark" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">Tech Toolkit</h2>
+                <div class="section-divider-dark" data-aos="fade-right" data-aos-duration="800" data-aos-delay="300"></div>
+                <p class="skills-subtitle" data-aos="fade-bot" data-aos-duration="800" data-aos-delay="400">Technologies I work with daily</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-6 col-md-4 col-lg-2 text-center">
+                    <div class="skill-card-dark" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <img src="img/html-5.png" alt="html" height="55">
+                        <h5>HTML5</h5>
+                        <div class="skill-bar"><div class="skill-bar-fill" style="width: 80%"></div></div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 text-center">
+                    <div class="skill-card-dark" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <img src="img/css-3.png" alt="CSS3" height="55">
+                        <h5>CSS3</h5>
+                        <div class="skill-bar"><div class="skill-bar-fill" style="width: 70%"></div></div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 text-center">
+                    <div class="skill-card-dark" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                        <img src="img/bootstrap.png" alt="Bootstrap" height="55">
+                        <h5>Bootstrap</h5>
+                        <div class="skill-bar"><div class="skill-bar-fill" style="width: 30%"></div></div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 text-center">
+                    <div class="skill-card-dark" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                        <img src="img/mysql.png" alt="MySQL" height="55">
+                        <h5>MySQL</h5>
+                        <div class="skill-bar"><div class="skill-bar-fill" style="width: 20%"></div></div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 text-center">
+                    <div class="skill-card-dark" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                        <img src="img/java.png" alt="java" height="55">
+                        <h5>Java</h5>
+                        <div class="skill-bar"><div class="skill-bar-fill" style="width: 70%"></div></div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 text-center">
+                    <div class="skill-card-dark" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                        <img src="img/git.png" alt="Git" height="55">
+                        <h5>Git</h5>
+                        <div class="skill-bar"><div class="skill-bar-fill" style="width: 20%"></div></div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 text-center">
+                    <div class="skill-card-dark" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">
+                        <img src="img/figma.png" alt="Figma" height="55">
+                        <h5>Figma</h5>
+                        <div class="skill-bar"><div class="skill-bar-fill" style="width: 60%"></div></div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 text-center">
+                    <div class="skill-card-dark" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
+                        <img src="img/canva.png" alt="Canva" height="55">
+                        <h5>Canva</h5>
+                        <div class="skill-bar"><div class="skill-bar-fill" style="width: 89%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WORK SECTION (TEXTURED WHITE) ===== -->
+    <section id="Work" class="py-5 section-white-textured">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <div class="section-badge-white" data-aos="fade-bot" data-aos-duration="800" data-aos-delay="00">Career</div>
+                <h2 class="section-title-white" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">Work Experience</h2>
+                <div class="section-divider-white" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200"></div>
+                <p class="work-subtitle" data-aos="fade-bot" data-aos-duration="800" data-aos-delay="300">Professional journey and contributions</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6">
+                    <div class="experience-card-white" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="exp-img-placeholder">
+                            <img src="img/work.jpg" alt="work experience" class="placeholder-img">
+                        </div>
+                        <div class="exp-header">
+                            <div>
+                                <h3>Office Assistant </h3>
+                                <p class="exp-company">Office of the Vice President for Research, Davao del Norte State College</p>
+                            </div>
+                            <span class="exp-date">2024 – 2025</span>
+                        </div>
+                        <p> I assisted with administrative and technical tasks that supported the 
+                            department's daily operations. This experience enhanced my communication, 
+                            organization, and computer skills while providing valuable exposure to a 
+                            professional office environment.</p>
+                        <div class="exp-tags">
+                            <span>Document Management</span>
+                            <span>Team Collaboration</span>
+                            <span>Administrative Assistance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE / PROJECTS SECTION (DARK/BLACK) ===== -->
+    <section id="Experience" class="py-5 section-dark-bg">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <div class="section-badge-dark" data-aos="fade-bot" data-aos-duration="800" data-aos-delay="00">Portfolio</div>
+                <h2 class="section-title-dark" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">Featured Projects</h2>
+                <div class="section-divider-dark" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200"></div>
+                <p class="projects-subtitle" data-aos="fade-bot" data-aos-duration="800" data-aos-delay="300">Selected work that showcases my capabilities</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card-dark" data-aos="flip-left" data-aos-duration="800" data-aos-delay="100">
+                        <div class="project-img-placeholder">
+                            <img src="img/Html-CSS-resume.png" alt="resume" class="placeholder-img">
+                        </div>
+
+                        <h4>HTML & CSS Resume</h4>
+                        <p>Responsive resume webpage built with HTML5 and CSS3, featuring a clean layout, modern styling, and organized presentation of professional information.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                        </div>
+
+                        <a href="https://github.com/semillanojeric-cmd/Personal-Resume.git" class="btn-view-project mt-2">
+                            <i class="bi bi-arrow-up-right"></i> View
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card-dark" data-aos="flip-left" data-aos-duration="800" data-aos-delay="200">
+                        <div class="project-img-placeholder">
+                            <img src="img/qbank.png" alt="qbank" class="placeholder-img">
+                        </div>
+
+                        <h4>QBank Banking System</h4>
+                        <p>Java and MySQL banking system that supports account management, deposits, withdrawals, and transaction tracking through a secure database-driven application.</p>
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>MySQL</span>
+                            <span>Database</span>
+                        </div>
+
+                        <a href="https://github.com/semillanojeric-cmd/QBank-BankingSystem-FinalProject-IT121.git" class="btn-view-project mt-2">
+                            <i class="bi bi-arrow-up-right"></i> View
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card-dark" data-aos="flip-left" data-aos-duration="800" data-aos-delay="300">
+                        <div class="project-img-placeholder">
+                            <img src="img/dnsc.jpg" alt="DayBreak Corner" class="placeholder-img">
+                        </div>
+
+                        <h4>DayBreak Corner Website</h4>
+                        <p>Responsive e-commerce website featuring product browsing, shopping cart functionality, and a modern user interface built with HTML5, CSS3, and Bootstrap.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <a href="https://github.com/semillanojeric-cmd/DAYBREAK-CORNER-PROJECT-1stYearWebsiteDevelopmentProject.git" class="btn-view-project mt-2">
+                            <i class="bi bi-arrow-up-right"></i> View
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EDUCATION SECTION (TEXTURED WHITE) ===== -->
+    <section id="Education" class="py-5 section-white-textured">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <div class="section-badge-white" data-aos="fade-bot" data-aos-duration="800" data-aos-delay="00">Academic Background</div>
+                <h2 class="section-title-white" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">Education</h2>
+                <div class="section-divider-white" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="education-card-white edu-card-col" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="edu-img-placeholder">
+                            <img src="img/dnsc.jpg" alt="DNSC campus" class="placeholder-img">
+                        </div>
+                        <div class="edu-content">
+                            <h3>BS Information Technology</h3>
+                            <p class="edu-institution">Davao del Norte State Colleges, Panabo City</p>
+                            <span class="edu-date">2023 – Present</span>
+                            <p class="edu-desc">IT student specializing in web development and user-centered design. Expanding knowledge in full-stack frameworks, database architecture, and responsive UI/UX.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="education-card-white edu-card-col" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                        <div class="edu-img-placeholder">
+                            <img src="img/pcnhs.jpg" alt="pcnhs" height="330">
+                        </div>
+                        
+                        <div class="edu-content">
+                            <h3>STEM Strand - Senior High School</h3>
+                            <p class="edu-institution">Panabo City National High School, Panabo City</p>
+                            <span class="edu-date">2023 – 2025</span>
+                            <p class="edu-desc">Completed STEM strand with honors. Developed strong foundation in advanced mathematics, physics, and programming principles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION (DARK/BLACK) ===== -->
+    <section id="Contact" class="py-5 section-dark-bg">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <div class="section-badge-dark" data-aos="fade-bot" data-aos-duration="800" data-aos-delay="00">Get in Touch</div>
+                <h2 class="section-title-dark" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">Let's Connect</h2>
+                <div class="section-divider-dark" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200"></div>
+                <p class="contact-subtitle" data-aos="fade-bot" data-aos-duration="800" data-aos-delay="300">Have a project in mind? Let's bring your ideas to life.</p>
+            </div>
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                <div class="col-lg-8">
+                    <div class="contact-card-dark">
+                        <form>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control-dark" placeholder="Full name">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control-dark" placeholder="Email address">
+                                </div>
+                                <div class="col-12">
+                                    <textarea rows="4" class="form-control-dark" placeholder="Tell me about your idea..."></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="button" class="btn-send" data-bs-toggle="modal" data-bs-target="#myModal"> Send Message <i class="bi bi-send ms-2"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="contact-divider"></div>
+                        <div class="contact-social">
+                            <a href="https://github.com/semillanojeric-cmd" class="social-circle"><i class="bi bi-github"></i></a>
+                            <a href="https://www.facebook.com/semillanojeric020907" class="social-circle"><i class="bi bi-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-dark">
+        <div class="container text-center">
+            <p>© 2025 Jeric Semillano — Built with Bootstrap & pure CSS. All passions reserved.</p>
+        </div>
+    </footer>
+
+
+    <!-- ===== MODAL ===== -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content custom-modal">
+
+        <!-- Modal Header -->
+        <div class="modal-header custom-modal-header">
+            <div class="custom-modal-title-wrap">
+            <div class="custom-modal-icon"><i class="bi bi-skulls"></i></div>
+            <h5 class="modal-title" id="myModalLabel">Unavailable Feature</h5>
+            </div>
+            <button type="button" class="custom-modal-close" data-bs-dismiss="modal" aria-label="Close">
+            <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="modal-body custom-modal-body">
+            You cannot use this feature muna po. Thank you
+        </div>
+
+        <!-- Modal Footer -->
+        <div class="modal-footer custom-modal-footer">
+            <button type="button" class="btn-modal-close" data-bs-dismiss="modal">
+            <i class="bi bi-x me-1"></i>Close
+            </button>
+        </div>
+
+        </div>
+    </div>
+    </div>
+
+
+    <!-- Bootstrap JS Bundle (moved here so DOM is ready) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- script for the offcanvas -->
+    <script>
+        var offcanvasEl = document.getElementById('mobileMenu');
+
+        document.querySelectorAll('#mobileMenu a[href^="#"]').forEach(function(link) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault(); // stop the instant jump
+
+                var targetId = this.getAttribute('href'); // e.g. "#Home"
+
+                var instance = bootstrap.Offcanvas.getInstance(offcanvasEl)
+                            || new bootstrap.Offcanvas(offcanvasEl);
+
+                // Wait until offcanvas is fully closed, THEN scroll
+                offcanvasEl.addEventListener('hidden.bs.offcanvas', function scrollAfterClose() {
+                    offcanvasEl.removeEventListener('hidden.bs.offcanvas', scrollAfterClose);
+                    var target = document.querySelector(targetId);
+                    if (target) target.scrollIntoView({ behavior: 'smooth' });
+                });
+
+                instance.hide();
+            });
+        });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
